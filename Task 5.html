@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        p {
+            text-align: right;
+
+        }
+
+        .label {
+            border: 1px solid black;
+            width: 130px;
+            height: 26px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        #Address {
+            border: 1px solid black;
+            width: 130px;
+            height: 26px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .form {
+
+            border: 1px solid black;
+            margin: 0 128px 0px 0px;
+        }
+
+        .form input[type="text"],[type="email"],[type="password"] {
+            width: 562px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registraion form</h1>
+    <form action="" method="get" class="form">
+        <div class="form">
+            <label for="Firstname" class="label">First Name</label>
+            <input type="text" name="Firstname">
+        </div>
+        <div class="form">
+            <label for="Lastname" class="label">Last Name</label>
+            <input type="text" name="Lastname">
+        </div>
+        <div class="form">
+            <label for="Email" class="label">Email</label>
+            <input type="email" name="Email">
+        </div>
+        <div class="form">
+            <label for="Password" class="label">Password</label>
+            <input type="password" name="Password">
+        </div>
+        <div class="form">
+            <label for="Gender" class="label">Gender:</label>
+            <label for="Gender"><input type="radio" value="Male">Male</label>
+            <br>
+            <label for="Gender"><input type="radio" value="Female" style="margin: 0px 2px 0px 129px;">Female</label>
+        </div>
+        <div class="form">
+
+            <label for="Age" class="label">Age</label>
+            <input type="text" name="Age">
+        </div>
+        <div class="form">
+            <label for="Phonenumber" class="label">Phone Number</label>
+            <input type="tel" name="Phonenumber">
+        </div>
+        <div class="form">
+            <label for="Address" id="Address">Address</label>
+            <textarea rows="3" cols="40" name="Address" form="form">
+                </textarea>
+        </div>
+        <div class="form">
+            <label for="Country" class="label">Country</label>
+            <select name="Country" id="country">
+                <option value="Choose your country">Choose your country</option>
+                <option value="India">India</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="Languadges known" class="label">Languages known</label>
+            <label for="English"><input type="checkbox" value="English" name="Password">English</label>
+            <label for="Kannada"><input type="checkbox" value="Kannada" name="Password">Kannada</label>
+            <label for="Hindi"><input type="checkbox" value="Hindi" name="Password">Hindi</label>
+            <label for="Telgu"><input type="checkbox" value="Telgu" name="Password">Telgu</label>
+        </div>
+        <div class="form">
+            <label for="Declaration"><input type="checkbox">Hereby I declare all the given details are true</label>
+
+        </div>
+        <div class="form">
+            <p>Log in to <a href="">Ethnus</a>website</p>
+        </div>
+
+    </form>
+    <div>
+        <input type="submit" value="Register">
+    </div>
+</body>
+
+</html>
