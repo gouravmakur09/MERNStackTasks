@@ -1,113 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 5</title>
     <style>
-        p {
-            text-align: right;
-
+        caption{
+            font-size:30px ;
+            color: blue;
+            margin-bottom: 10px;
+            font-weight: bolder;
         }
-
-        .label {
-            border: 1px solid black;
-            width: 130px;
-            height: 26px;
-            display: inline-block;
+        div{
+            margin-top: 10px;
             text-align: center;
-            font-weight: bold;
-
         }
-
-        #Address {
+        table{
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        table,td{
             border: 1px solid black;
-            width: 130px;
-            height: 26px;
-            display: inline-block;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .form {
-
-            border: 1px solid black;
-            margin: 0 128px 0px 0px;
-        }
-
-        .form input[type="text"],[type="email"],[type="password"] {
-            width: 562px;
-        }
+            border-collapse: collapse;
+        } 
     </style>
 </head>
+<table>
+    <caption>Registration form</caption>
+    <tr>
+        <td style="width: 15%; ">First Name</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Last Name</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Email</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Password</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Re-enter Password</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td rowspan="2" style="width: 15%; height: 40px; ">Gender</td>
+        <td style="width: 45%; "><input type="radio"> Male</td>
+    </tr>
+    <tr>
+        <td style="width: 45%;"><input type="radio"> Female</td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Age:</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Phone No</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Address</td>
+        <td style="width: 45%; "><textarea name="" id="" cols="99" rows="5"></textarea></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">State</td>
+        <td style="width: 45%; "></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Country</td>
+        <td style="width: 45%; "><select id="country"><option value="country">Choose your country</option></select></td>
+    </tr>
+    <tr>
+        <td style="width: 15%; ">Language Known</td>
+        <td style="width: 45%; "><input type="checkbox"><label for="english">English </label><input type="checkbox"><label for="Kannada">Kannada </label><input type="checkbox"><label for="hindi">Hindi </label><input type="checkbox"><label for="telugu">Telugu </label></td>
+    </tr>
+    <tr>
+        <td colspan="2"> <input type="checkbox"><label>Hereby I declare all the given details are true </label></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: right;">Log in to <a href="d">Ethnus</a> Website</td>
+    </tr>
+        
+    
 
+</table>
+<div>
+<input type="submit" value="Register" >
+</div>
 <body>
-    <h1>Registraion form</h1>
-    <form action="" method="get" class="form">
-        <div class="form">
-            <label for="Firstname" class="label">First Name</label>
-            <input type="text" name="Firstname">
-        </div>
-        <div class="form">
-            <label for="Lastname" class="label">Last Name</label>
-            <input type="text" name="Lastname">
-        </div>
-        <div class="form">
-            <label for="Email" class="label">Email</label>
-            <input type="email" name="Email">
-        </div>
-        <div class="form">
-            <label for="Password" class="label">Password</label>
-            <input type="password" name="Password">
-        </div>
-        <div class="form">
-            <label for="Gender" class="label">Gender:</label>
-            <label for="Gender"><input type="radio" value="Male">Male</label>
-            <br>
-            <label for="Gender"><input type="radio" value="Female" style="margin: 0px 2px 0px 129px;">Female</label>
-        </div>
-        <div class="form">
-
-            <label for="Age" class="label">Age</label>
-            <input type="text" name="Age">
-        </div>
-        <div class="form">
-            <label for="Phonenumber" class="label">Phone Number</label>
-            <input type="tel" name="Phonenumber">
-        </div>
-        <div class="form">
-            <label for="Address" id="Address">Address</label>
-            <textarea rows="3" cols="40" name="Address" form="form">
-                </textarea>
-        </div>
-        <div class="form">
-            <label for="Country" class="label">Country</label>
-            <select name="Country" id="country">
-                <option value="Choose your country">Choose your country</option>
-                <option value="India">India</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-        <div class="form">
-            <label for="Languadges known" class="label">Languages known</label>
-            <label for="English"><input type="checkbox" value="English" name="Password">English</label>
-            <label for="Kannada"><input type="checkbox" value="Kannada" name="Password">Kannada</label>
-            <label for="Hindi"><input type="checkbox" value="Hindi" name="Password">Hindi</label>
-            <label for="Telgu"><input type="checkbox" value="Telgu" name="Password">Telgu</label>
-        </div>
-        <div class="form">
-            <label for="Declaration"><input type="checkbox">Hereby I declare all the given details are true</label>
-
-        </div>
-        <div class="form">
-            <p>Log in to <a href="">Ethnus</a>website</p>
-        </div>
-
-    </form>
-    <div>
-        <input type="submit" value="Register">
-    </div>
+    
 </body>
-
 </html>
