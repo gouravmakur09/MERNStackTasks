@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .image img {
+            border: 0px solid;
+            border-radius: 100vh;
+            height: 147px;
+
+        }
+
+        .Loginpage {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100vh;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            display: inline-block;
+            box-sizing: border-box;
+            height: 32px;
+            padding: 0px 3px;
+        }
+
+        #login {
+            background-color: #66c415;
+            color: white;
+            border: 0px;
+            margin: 14px 0px;
+            width: 100vh;
+            height: 35px;
+        }
+        #login:hover {
+            background-color: #67c415ad;
+        }
+
+        #cancel {
+            height: 30px;
+            background-color: rgb(255, 67, 67);
+            color: white;
+            border: 0px;
+            border-radius: 5px;
+            width: 70px;
+            margin: 31px 0 0 -638px;
+        }
+        #cancel:hover {
+            
+            background-color: rgb(205, 8, 8);  
+        }
+
+        #a {
+            text-align: right;
+            color: black;
+            margin: -23px -576px 0 0;
+        }
+        h3{
+            margin: 25px 0px 0px 0px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="Loginpage">
+        <div class="image">
+            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="User image">
+        </div>
+        <div class="login">
+            <h3>Username</h3>
+            <input type="text" placeholder="Enter Username">
+            <h3>Password</h3>
+            <input type="password" placeholder="Enter Password">
+            <br>
+            <button type="submit" id="login">Login</button>
+            <br>
+            <label for="Remeber me"><input type="checkbox"> Remeber me</label>
+        </div>
+        
+        <button id="cancel">Cancel</button>
+        <a href="#" id="a">Forgot Password?</a>
+        
+    </div>
+    
+</body>
+
+</html>

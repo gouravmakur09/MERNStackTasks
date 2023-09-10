@@ -4,109 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Task 2</title>
+    <title>Task 7</title>
     <style>
         .menubar {
+            display: flex;
             background-color: white;
             border: 1px solid black;
-            display: flex;
-            width: 20vh;
-
+            width: 30vh;
+            height: 30vh;
         }
 
-        .menu {
-
-            display: flex;
-            width: 20vh;
-            background-color: rgb(161, 161, 226);
-            margin: 3px;
-            padding: 3px;
+        .menubar nav {
+            background-color: rgb(158, 217, 246);
+            width: 214px;
+            margin: 4px;
         }
 
-        .menu ul li {
+        .menubar nav ul {
+            margin: 0px 0 0 0px;
+            height: 213px;
+        }
+
+
+        .menubar nav ul li {
             list-style: none;
+            margin: 18px 0px;
+            margin: 1px 0px 2px -39px;
+            font-size: 20px;
+            height: 41px;
+            display: flex;
+            align-items: center;
+
         }
 
-        .menu ul li a {
+        .menubar nav ul li:hover {
+            background-color: rgb(255 180 14);
+
+        }
+
+        .menubar nav ul li a {
             text-decoration: none;
-            margin: 6px 5px;
+
         }
 
-        .menubar menu nav li a:hover {
-            background-color: rgb(249, 205, 30);
-            color: antiquewhite;
-            font-weight: bold;
-        }
-
-        .menubar2 {
-            background-color: #f2f2f2;
+        .hmenubar {
+            background-color: white;
+            margin: 0 350px;
             border: 1px solid black;
-            width: 552px;
-            padding: 1px;
-            margin: 8px 0;
+            width: 494px;
         }
 
-        .menu2 {
-
-            background-color: rgb(154, 154, 154);
-            margin: 3px;
-            padding: 3px;
-            width: 540px;
-        }
-
-        .menubar2 .menu2 ul {
+        #horizontal ul {
+            margin: 2px 2px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            width: 50vh;
-
+            background-color: rgb(169, 169, 169);
+            height: 60px;
+            width: 450px;
         }
 
-        .menubar2 .menu2 ul li {
-            list-style: none;
-
-        }
-
-        .menubar2 .menu2 ul li a {
+        #horizontal ul li a {
             text-decoration: none;
-            margin: 0 24px;
-
+            align-content: center;
         }
 
-        .menubar2 .menu2 nav ul li a :hover {
-            font-weight: bold;
+        #horizontal ul li {
+            list-style: none;
+            margin: 0 1px;
+
+            width: 88px;
+            height: 59px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #horizontal ul li:hover {
+            background-color: rgb(69, 69, 69);
+            color: white;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="menubar">
-                <div class="menu">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#java">Java</a></li>
-                        <li><a href="#css">CSS</a></li>
-                        <li><a href="#html">HTML</a></li>
-                        <li><a href="#bootstrap">Bootstrap</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="menubar2">
-                <div class="menu2">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#java">Java</a></li>
-                        <li><a href="#css">CSS</a></li>
-                        <li><a href="#html">HTML</a></li>
-                        <li><a href="#bootstrap">Bootstrap</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="menubar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#java">Java</a></li>
+                    <li><a href="#Css">CSS</a></li>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#bootstrap">Bootstrap</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hmenubar">
+            <nav id="horizontal">
+                <ul id="horizontal ul">
+                    <li><a href="#home"></a>Home</li>
+                    <li><a href="#home"></a>Java</li>
+                    <li><a href="#home"></a>CSS</li>
+                    <li><a href="#home"></a>HTML</li>
+                    <li><a href="#home"></a>Bootstrap</li>
 
-        </nav>
-
+                </ul>
+            </nav>
+        </div>
     </header>
 </body>
 
